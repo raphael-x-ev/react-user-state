@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
+import { Badge } from "react-bootstrap";
 import UserTable from "./Table/UserTable";
 
 const Body = () => {
@@ -30,6 +31,9 @@ const Body = () => {
     return (
       <div>
         <UserTable userData={data} />
+        <Badge variant="dark" style={{ float: "right" }}>
+          Raphael E. Valdez © 06/2021
+        </Badge>
       </div>
     );
   }
